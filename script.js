@@ -1,13 +1,11 @@
-let marks = [85, 97, 44, 37, 76, 60]
+let items = [250, 645, 300, 900, 50]
 
-n = marks.length
-
-console.log(n)
-let sum = 0
-
-for (let i = 0; i < n; i++){
-    sum = (sum + marks[i]) 
-    avg = sum / n
+let i = 0
+for (let val of items){
+    console.log(val);
+    console.log('value at index',i,'=',val);
+    let offer = val / 10;
+    items[i] = items[i]- offer;
+    console.log('value after offer =', items[i]);
+    i++;
 }
-console.log(sum)
-console.log(avg)
