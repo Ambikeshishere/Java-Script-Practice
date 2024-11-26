@@ -1,11 +1,5 @@
-let items = [250, 645, 300, 900, 50]
+const number = [1,2,3,4,5];
 
-let i = 0
-for (let val of items){
-    console.log(val);
-    console.log('value at index',i,'=',val);
-    let offer = val / 10;
-    items[i] = items[i]- offer;
-    console.log('value after offer =', items[i]);
-    i++;
-}
+number.forEach(number => {
+    console.log(number**2);
+});
